@@ -1,0 +1,40 @@
+swarm.scan(number: 4)
+
+swarm.tellos.takeOff()
+
+swarm.sync(seconds: 10)
+
+
+
+for i in 1…4 {
+
+	swarm.tellos[0].flyDown(cm: 50)
+
+	swarm.tellos[1].flyDown(cm: 50)
+
+	swarm.tellos[2].flyUp(cm: 50)
+
+	swarm.tellos[3].flyUp(cm: 50)
+
+
+
+	swarm.sync(seconds: 10)
+
+	swarm.tellos[0].flyUp(cm: 50)
+
+	swarm.tellos[1].flyUp(cm: 50)
+
+	swarm.tellos[2].flyDown(cm: 50)
+
+	swarm.tellos[3].flyDown(cm: 50)
+
+}
+
+
+
+swarm.sync (seconds: 10)
+
+swarm.tellos.land()
+
+
+
